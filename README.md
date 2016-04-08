@@ -1,10 +1,10 @@
-## IP Name ##
+## AIT 664 (AFDX) Custom Device ##
 
-**IP Name** is a insert description of IP
+The **AIT 664 Custom Device** allows users to use the AIT AFDX (ARINC 664p7) board in NI VeriStand.
 
 ### LabVIEW Version ###
 
-Describe the LabVIEW version used to develop this source
+LabVIEW 2015 and later
 
 ### Built Availability ###
 
