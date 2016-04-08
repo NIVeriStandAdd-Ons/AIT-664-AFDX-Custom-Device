@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+	<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+	<AddMenu>
+		<eng>AIT 664</eng>
+		<loc>AIT 664</loc>
+	</AddMenu>
+	<Version>1.0.0.6</Version>
+	<Type>Inline HW Interface</Type>
+	<MaxOccurrence>2474</MaxOccurrence>
+	<MainPageGUID>4AA0FB30-DC4B-4C4E-8EA3-24E23807ABE5</MainPageGUID>
+	<InitializationVI>
+		<Type>Action</Type>
+		<Item2Launch>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 Initialization VI.vi</Path>
+		</Item2Launch>
+	</InitializationVI>
+	<CustomDeviceVI>
+		<SourceDistribution>
+			<Source>
+				<SupportedTarget>PharlapWindows</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\AIT 664\AIT 664 RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\AIT 664\AIT 664 RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+		</SourceDistribution>
+	</CustomDeviceVI>
+	<Dependencies>
+		<Dependency>
+			<SupportedTarget>PharlapWindows</SupportedTarget>
+			<Source>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Engine.llb</Path>
+			</Source>
+			<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\AIT 664\AIT 664 Engine.llb</RealTimeSystemDestination>
+		</Dependency>
+	</Dependencies>
+	<Pages>
+		<Page>
+			<Name>
+				<eng>AIT 664</eng>
+				<loc>AIT 664</loc>
+			</Name>
+			<Copy>Copy</Copy>
+			<GUID>4AA0FB30-DC4B-4C4E-8EA3-24E23807ABE5</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\daq.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 Main Page.vi</Path>
+			</Item2Launch>
+			<RunTimeMenu>
+				<MenuItem>
+					<GUID>4D3E4B7C-0FEE-4AC8-BD67-E16503B97C57</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Load Database</eng>
+						<loc>Load Database</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Load Database.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>C2F122E4-CB65-4933-ACA7-9A99B28B2569</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Clear Database Selection</eng>
+						<loc>Clear Database Selection</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Clear Database.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>303ACF40-3721-4634-B63F-800E91FCED99</GUID>
+					<Type>VI</Type>
+					<Name>
+						<eng>Export Database Parameters</eng>
+						<loc>Export Database Parameters</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Save Database.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>EF22350A-FCDD-49F5-B36D-6B8DCE7BF750</GUID>
+					<Type>Separator</Type>
+					<Name>
+						<eng>.</eng>
+						<loc>.</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>.</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>F8D44D49-312A-4337-B42C-CC0DC210F6D2</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Disable</eng>
+						<loc>Disable</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\EnableDisable - Right Click.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+			</RunTimeMenu>
+			<ButtonList>
+				<Button>
+					<ID>NIVS_AIM664_LoadDB</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\add database.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>4D3E4B7C-0FEE-4AC8-BD67-E16503B97C57</ReferencedGUID>
+					<ButtonText>
+						<eng>Load Database</eng>
+						<loc>Load Database</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Load Database</eng>
+						<loc>Load Database</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Load Database</eng>
+						<loc>Load Database</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+				<Button>
+					<ID>NIVS_AIM664_ClearDB</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\EditDelete.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>C2F122E4-CB65-4933-ACA7-9A99B28B2569</ReferencedGUID>
+					<ButtonText>
+						<eng>Clear Database</eng>
+						<loc>Clear Database</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Clear Database</eng>
+						<loc>Clear Database</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Clear Database</eng>
+						<loc>Clear Database</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+			</ButtonList>
+			<ActionVIOnLoad>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\Main On Load Action VI.vi</Path>
+			</ActionVIOnLoad>
+			<ActionVIOnDownload>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Action On Download.vi</Path>
+			</ActionVIOnDownload>
+			<ActionVIOnCompile>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Conditionally Serialize.vi</Path>
+			</ActionVIOnCompile>
+		</Page>
+		<Page>
+			<Name>
+				<eng>AIT 664</eng>
+				<loc>AIT 664</loc>
+			</Name>
+			<Copy>Copy</Copy>
+			<GUID>997C1B95-6D68-4D05-AFF2-98E404014BA2</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\daq_disabled.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 Main Page.vi</Path>
+			</Item2Launch>
+			<RunTimeMenu>
+				<MenuItem>
+					<GUID>4D3E4B7C-0FEE-4AC8-BD67-E16503B97C57</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Load Database</eng>
+						<loc>Load Database</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Load Database.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>C2F122E4-CB65-4933-ACA7-9A99B28B2569</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Clear Database Selection</eng>
+						<loc>Clear Database Selection</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Clear Database.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>EF22350A-FCDD-49F5-B36D-6B8DCE7BF750</GUID>
+					<Type>Separator</Type>
+					<Name>
+						<eng>.</eng>
+						<loc>.</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>.</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>F8D44D49-312A-4337-B42C-CC0DC210F6D2</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Enable</eng>
+						<loc>Enable</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\EnableDisable - Right Click.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+			</RunTimeMenu>
+			<ButtonList>
+				<Button>
+					<ID>NIVS_AIM664_LoadDB</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\add database.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>4D3E4B7C-0FEE-4AC8-BD67-E16503B97C57</ReferencedGUID>
+					<ButtonText>
+						<eng>Load Database</eng>
+						<loc>Load Database</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Load Database</eng>
+						<loc>Load Database</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Load Database</eng>
+						<loc>Load Database</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+				<Button>
+					<ID>NIVS_AIM664_ClearDB</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\EditDelete.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>C2F122E4-CB65-4933-ACA7-9A99B28B2569</ReferencedGUID>
+					<ButtonText>
+						<eng>Clear Database</eng>
+						<loc>Clear Database</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Clear Database</eng>
+						<loc>Clear Database</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Clear Database</eng>
+						<loc>Clear Database</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+			</ButtonList>
+			<ActionVIOnLoad>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\Main On Load Action VI.vi</Path>
+			</ActionVIOnLoad>
+		</Page>
+		<Page>
+			<Name>
+				<eng>End System</eng>
+				<loc>End System</loc>
+			</Name>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>2F575A5F-A4B6-4631-93A8-0AFA2722625C</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\root.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 End System Page.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Output VL</eng>
+				<loc>Output VL</loc>
+			</Name>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>3935F3D2-468E-4B98-8B71-6F9ECDCE061D</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\xnet outgoing.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 Output VL Page.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Input VL</eng>
+				<loc>Input VL</loc>
+			</Name>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>213DE7A6-AD2E-4100-AAE2-F7F57146E2E9</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\xnet incoming.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 Input VL Page.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Tx Message Ports</eng>
+				<loc>Tx Message Ports</loc>
+			</Name>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>3F045D4F-17C3-4390-885C-937226A99FBD</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\NI-XNET Port.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 Tx Message Ports Page.vi</Path>
+			</Item2Launch>
+			<RunTimeMenu>
+				<MenuItem>
+					<GUID>8DD14F3D-0C28-4E1A-A72B-9A38DCF1ADE7</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Add Data Parameter</eng>
+						<loc>Add Data Parameter</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Add Data Channel.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>D88F33F9-EB43-4E7A-A17B-38FF0A2ABDF8</GUID>
+					<Type>VI</Type>
+					<Name>
+						<eng>Add Parameter...</eng>
+						<loc>Add Parameter...</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Add Multiple Channels.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>63DF505B-C2AB-4C8B-BE36-AE5919B521D1</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Add Parameter For Each Bit</eng>
+						<loc>Add Parameter For Each Bit</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Add Multiple Bit Channels.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>EF22350A-FCDD-49F5-B36D-6B8DCE7BF750</GUID>
+					<Type>Separator</Type>
+					<Name>
+						<eng>.</eng>
+						<loc>.</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>.</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>79E8E95F-46BF-4820-9552-D6A3613955AA</GUID>
+					<Type>VI</Type>
+					<MinNrOfChilds>1</MinNrOfChilds>
+					<Name>
+						<eng>Delete Multiple Items</eng>
+						<loc>Delete Multiple Items</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>Dialogs\Delete Multiple Items.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+			</RunTimeMenu>
+			<ButtonList>
+				<Button>
+					<ID>NIVS_AIM1553_AddDataChannel</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\NI-XNET Add Signal.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>8DD14F3D-0C28-4E1A-A72B-9A38DCF1ADE7</ReferencedGUID>
+					<ButtonText>
+						<eng>Add Data Parameter</eng>
+						<loc>Add Data Parameter</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Add Data Parameter</eng>
+						<loc>Add Data Parameter</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Add Data Parameter</eng>
+						<loc>Add Data Parameter</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+				<Button>
+					<ID>NIVS_AIM1553_AddLabelChannels</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\NI-XNET Add Signal.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>D88F33F9-EB43-4E7A-A17B-38FF0A2ABDF8</ReferencedGUID>
+					<ButtonText>
+						<eng>Add Parameter...</eng>
+						<loc>Add Parameter...</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Add Parameter...</eng>
+						<loc>Add Parameter...</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Add Parameter...</eng>
+						<loc>Add Parameter...</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+				<Button>
+					<ID>NIVS_AIM1553_AddLabelBitChannels</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\NI-XNET Add RawData Channel.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>63DF505B-C2AB-4C8B-BE36-AE5919B521D1</ReferencedGUID>
+					<ButtonText>
+						<eng>Add Parameter For Each Bit</eng>
+						<loc>Add Parameter For Each Bit</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Add Parameter For Each Bit</eng>
+						<loc>Add Parameter For Each Bit</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Add Parameter For Each Bit</eng>
+						<loc>Add Parameter For Each Bit</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+			</ButtonList>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Rx Message Ports</eng>
+				<loc>Rx Message Ports</loc>
+			</Name>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>85638AB9-73EA-4DD0-AE5B-CB4846ED525C</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\xnet port.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 Rx Message Ports Page.vi</Path>
+			</Item2Launch>
+			<RunTimeMenu>
+				<MenuItem>
+					<GUID>8DD14F3D-0C28-4E1A-A72B-9A38DCF1ADE7</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Add Data Parameter</eng>
+						<loc>Add Data Parameter</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Add Data Channel.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>D88F33F9-EB43-4E7A-A17B-38FF0A2ABDF8</GUID>
+					<Type>VI</Type>
+					<Name>
+						<eng>Add Parameter...</eng>
+						<loc>Add Parameter...</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Add Multiple Channels.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>63DF505B-C2AB-4C8B-BE36-AE5919B521D1</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Add Parameter For Each Bit</eng>
+						<loc>Add Parameter For Each Bit</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 - Add Multiple Bit Channels.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>EF22350A-FCDD-49F5-B36D-6B8DCE7BF750</GUID>
+					<Type>Separator</Type>
+					<Name>
+						<eng>.</eng>
+						<loc>.</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>.</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>79E8E95F-46BF-4820-9552-D6A3613955AA</GUID>
+					<Type>VI</Type>
+					<MinNrOfChilds>1</MinNrOfChilds>
+					<Name>
+						<eng>Delete Multiple Items</eng>
+						<loc>Delete Multiple Items</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>Dialogs\Delete Multiple Items.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+			</RunTimeMenu>
+			<ButtonList>
+				<Button>
+					<ID>NIVS_AIM1553_AddDataChannel</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\NI-XNET Add Signal.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>8DD14F3D-0C28-4E1A-A72B-9A38DCF1ADE7</ReferencedGUID>
+					<ButtonText>
+						<eng>Add Data Parameter</eng>
+						<loc>Add Data Parameter</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Add Data Parameter</eng>
+						<loc>Add Data Parameter</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Add Data Parameter</eng>
+						<loc>Add Data Parameter</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+				<Button>
+					<ID>NIVS_AIM1553_AddLabelChannels</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\NI-XNET Add Signal.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>D88F33F9-EB43-4E7A-A17B-38FF0A2ABDF8</ReferencedGUID>
+					<ButtonText>
+						<eng>Add Parameter...</eng>
+						<loc>Add Parameter...</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Add Parameter...</eng>
+						<loc>Add Parameter...</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Add Parameter...</eng>
+						<loc>Add Parameter...</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+				<Button>
+					<ID>NIVS_AIM1553_AddLabelBitChannels</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\NI-XNET Add RawData Channel.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>63DF505B-C2AB-4C8B-BE36-AE5919B521D1</ReferencedGUID>
+					<ButtonText>
+						<eng>Add Parameter For Each Bit</eng>
+						<loc>Add Parameter For Each Bit</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Add Parameter For Each Bit</eng>
+						<loc>Add Parameter For Each Bit</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Add Parameter For Each Bit</eng>
+						<loc>Add Parameter For Each Bit</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+			</ButtonList>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Message Parameter Page</eng>
+				<loc>Message Parameter Page</loc>
+			</Name>
+			<GUID>68590DF2-265A-465B-BAB5-5ABE6CADE670</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\NI-XNET SinglePoint.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\AIT 664 Parameter Page.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Status Section</eng>
+				<loc>Status Section</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>F068105C-6F57-422F-81C9-D1E870E3340F</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\NI-XNET Status.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIT 664\AIT 664 Configuration.llb\Status Section Page.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Channel (delete protected)</eng>
+				<loc>Channel (delete protected)</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>C9C40DCC-9164-491A-ABAD-09896E38B425</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>Absolute</Type>
+				<Path>System UI VIs\Custom Device\Custom Device Channel.vi</Path>
+			</Item2Launch>
+			<RunTimeMenu />
+			<Help>
+				<Item2Launch>
+					<Type>To Base</Type>
+					<Path>Veristand.chm\Custom_Devices_SE.html</Path>
+				</Item2Launch>
+				<FileType>chm</FileType>
+			</Help>
+		</Page>
+	</Pages>
+	<CustomXML>
+		<Dummy></Dummy>
+	</CustomXML>
+</CustomDevice>
