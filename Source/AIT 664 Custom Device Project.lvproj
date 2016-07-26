@@ -57,7 +57,7 @@
 	<Property Name="utf.run.statusfile.flag" Type="Bool">false</Property>
 	<Property Name="utf.run.statusfile.path" Type="Path">test status log.txt</Property>
 	<Property Name="utf.run.timestamp.flag" Type="Bool">false</Property>
-	<Property Name="varPersistentID:{D0074833-91D4-4C18-A76C-29DBBFB0CBCC}" Type="Ref">/My Computer/Dependencies/user.lib/AIT 664 API.lvlib/aProgressBar</Property>
+	<Property Name="varPersistentID:{AADD2EBF-A9EA-4138-9F6E-98CAC14C7A69}" Type="Ref">/My Computer/Dependencies/user.lib/AIT 664 API.lvlib/aProgressBar</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="CCSymbols" Type="Str">Driver,Off;</Property>
 		<Property Name="IOScan.Faults" Type="Str"></Property>
@@ -164,7 +164,7 @@
 			<Item Name="ttes_api.dll" Type="Document" URL="ttes_api.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="ttes_api.dll" Type="Document" URL="../../../../../Windows/SysWOW64/ttes_api.dll"/>
+			<Item Name="ttes_api.dll" Type="Document" URL="../../../../Windows/SysWOW64/ttes_api.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Release" Type="Source Distribution">
@@ -190,7 +190,7 @@
 				<Property Name="DestinationCount" Type="Int">4</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FF9B7754-0372-4C67-A415-76FF1EA90104}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FC33F415-8375-40D7-BB40-01F1C05C5BF8}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Remove front panel</Property>
@@ -202,21 +202,14 @@
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/NIVS Libs</Property>
 				<Property Name="Source[1].type" Type="Str">Container</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Custom Device/AIT 664 Custom Device.lvlib/System Explorer/Dynamically Called/Pages/AIT 664 Main Page.vi</Property>
+				<Property Name="Source[10].Container.applySaveSettings" Type="Bool">true</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Custom Device/AIT 664 Custom Device.lvlib/Controls and Global</Property>
 				<Property Name="Source[10].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[10].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[10].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[10].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[10].propertiesCount" Type="Int">2</Property>
-				<Property Name="Source[10].type" Type="Str">VI</Property>
-				<Property Name="Source[11].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Custom Device/AIT 664 Custom Device.lvlib/Controls and Global</Property>
-				<Property Name="Source[11].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[11].properties[0].value" Type="Bool">true</Property>
-				<Property Name="Source[11].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[11].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[11].propertiesCount" Type="Int">2</Property>
-				<Property Name="Source[11].type" Type="Str">Container</Property>
+				<Property Name="Source[10].type" Type="Str">Container</Property>
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Custom Device</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
@@ -237,30 +230,35 @@
 				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Custom Device/AIT 664 Custom Device.lvlib/System Explorer/Dynamically Called</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[5].type" Type="Str">Container</Property>
-				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref"></Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Custom Device/AIT 664 Custom Device.lvlib/System Explorer/Dynamically Called/AIT 664 - Action On Download.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Custom Device/AIT 664 Custom Device.lvlib/System Explorer/Dynamically Called/AIT 664 - Action On Download.vi</Property>
+				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[6].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Custom Device/AIT 664 Custom Device.lvlib/System Explorer/Dynamically Called/Main On Load Action VI.vi</Property>
 				<Property Name="Source[7].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[7].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[7].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[7].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[7].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[7].type" Type="Str">VI</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Custom Device/AIT 664 Custom Device.lvlib/System Explorer/Dynamically Called/Main On Load Action VI.vi</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Custom Device/AIT 664 Custom Device.lvlib/RT Driver/AIT 664 RT Driver VI.vi</Property>
 				<Property Name="Source[8].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[8].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[8].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[8].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[8].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[8].type" Type="Str">VI</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Custom Device/AIT 664 Custom Device.lvlib/RT Driver/AIT 664 RT Driver VI.vi</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Custom Device/AIT 664 Custom Device.lvlib/System Explorer/Dynamically Called/Pages/AIT 664 Main Page.vi</Property>
 				<Property Name="Source[9].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[9].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[9].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[9].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[9].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">12</Property>
+				<Property Name="SourceCount" Type="Int">11</Property>
 			</Item>
 			<Item Name="Engine Release" Type="Source Distribution">
 				<Property Name="Bld_buildCacheID" Type="Str">{6DA73D25-C12B-46AF-AB73-9D60D61BFEFE}</Property>
@@ -388,5 +386,86 @@
 				<Property Name="SourceCount" Type="Int">15</Property>
 			</Item>
 		</Item>
+	</Item>
+	<Item Name="NI-PXIe8133-AES" Type="RT PXI Chassis">
+		<Property Name="alias.name" Type="Str">NI-PXIe8133-AES</Property>
+		<Property Name="alias.value" Type="Str">10.84.1.59</Property>
+		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,PharLap;CPU,x86;</Property>
+		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
+		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
+		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
+		<Property Name="host.TargetCPUID" Type="UInt">3</Property>
+		<Property Name="host.TargetOSID" Type="UInt">15</Property>
+		<Property Name="target.cleanupVisa" Type="Bool">false</Property>
+		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
+		<Property Name="target.getDefault-&gt;WebServer.Port" Type="Int">80</Property>
+		<Property Name="target.getDefault-&gt;WebServer.Timeout" Type="Int">60</Property>
+		<Property Name="target.IOScan.Faults" Type="Str"></Property>
+		<Property Name="target.IOScan.NetVarPeriod" Type="UInt">100</Property>
+		<Property Name="target.IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
+		<Property Name="target.IOScan.Period" Type="UInt">10000</Property>
+		<Property Name="target.IOScan.PowerupMode" Type="UInt">0</Property>
+		<Property Name="target.IOScan.Priority" Type="UInt">0</Property>
+		<Property Name="target.IOScan.ReportModeConflict" Type="Bool">true</Property>
+		<Property Name="target.IsRemotePanelSupported" Type="Bool">true</Property>
+		<Property Name="target.RTCPULoadMonitoringEnabled" Type="Bool">true</Property>
+		<Property Name="target.RTDebugWebServerHTTPPort" Type="Int">8001</Property>
+		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
+		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
+		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.VIPath" Type="Path">/c/ni-rt/startup</Property>
+		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.server.tcp.access" Type="Str">+*</Property>
+		<Property Name="target.server.tcp.enabled" Type="Bool">false</Property>
+		<Property Name="target.server.tcp.paranoid" Type="Bool">true</Property>
+		<Property Name="target.server.tcp.port" Type="Int">3363</Property>
+		<Property Name="target.server.tcp.serviceName" Type="Str">Main Application Instance/VI Server</Property>
+		<Property Name="target.server.tcp.serviceName.default" Type="Str">Main Application Instance/VI Server</Property>
+		<Property Name="target.server.vi.access" Type="Str">+*</Property>
+		<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
+		<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.WebServer.Config" Type="Str">Listen 8000
+
+NI.ServerName default
+DocumentRoot "$LVSERVER_DOCROOT"
+TypesConfig "$LVSERVER_CONFIGROOT/mime.types"
+DirectoryIndex index.htm
+WorkerLimit 10
+InactivityTimeout 60
+
+LoadModulePath "$LVSERVER_MODULEPATHS"
+LoadModule LVAuth lvauthmodule
+LoadModule LVRFP lvrfpmodule
+
+#
+# Pipeline Definition
+#
+
+SetConnector netConnector
+
+AddHandler LVAuth
+AddHandler LVRFP
+
+AddHandler fileHandler ""
+
+AddOutputFilter chunkFilter
+
+
+</Property>
+		<Property Name="target.WebServer.Enabled" Type="Bool">false</Property>
+		<Property Name="target.WebServer.LogEnabled" Type="Bool">false</Property>
+		<Property Name="target.WebServer.LogPath" Type="Path">/c/ni-rt/system/www/www.log</Property>
+		<Property Name="target.WebServer.Port" Type="Int">80</Property>
+		<Property Name="target.WebServer.RootPath" Type="Path">/c/ni-rt/system/www</Property>
+		<Property Name="target.WebServer.TcpAccess" Type="Str">c+*</Property>
+		<Property Name="target.WebServer.Timeout" Type="Int">60</Property>
+		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
+		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
+		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="Test LV AIT664.vi" Type="VI" URL="../../../../Users/frmausse/Desktop/Test664 Proj/Test LV AIT664.vi"/>
+		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
