@@ -17,8 +17,15 @@ Describe the maturity of the IP. Is this in use worldwide? Is this terrible code
 Describe any limitations of the IP.
 
 ### Dependencies ###
+Need to install the Ethernet driver. To do that, login into AVI Tech and thenm, if you are using LabVIEW 32-bit, download the 32-bit drivers for:
 
-Describe any dependencies of the IP
+[http://aviftech.com/download-area/arinc-664/664-windows/](http://aviftech.com/download-area/arinc-664/664-windows/)
+
+And
+
+[http://aviftech.com/download-area/arinc-664/a664-labview/](http://aviftech.com/download-area/arinc-664/a664-labview/)
+
+
 
 ### License ###
 
